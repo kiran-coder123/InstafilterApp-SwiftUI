@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD28EA902934A4C100AB5392 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD28EA8F2934A4C100AB5392 /* ImagePicker.swift */; };
+		DD28EA922934E8FA00AB5392 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD28EA912934E8FA00AB5392 /* ImageSaver.swift */; };
 		DD354E0729335F97000F447E /* InstafilterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD354E0629335F97000F447E /* InstafilterApp.swift */; };
 		DD354E0929335F97000F447E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD354E0829335F97000F447E /* ContentView.swift */; };
 		DD354E0B29335F99000F447E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD354E0A29335F99000F447E /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD28EA8F2934A4C100AB5392 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		DD28EA912934E8FA00AB5392 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 		DD354E0329335F97000F447E /* Instafilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instafilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD354E0629335F97000F447E /* InstafilterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstafilterApp.swift; sourceTree = "<group>"; };
 		DD354E0829335F97000F447E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			children = (
 				DD354E0629335F97000F447E /* InstafilterApp.swift */,
 				DD354E0829335F97000F447E /* ContentView.swift */,
+				DD28EA912934E8FA00AB5392 /* ImageSaver.swift */,
+				DD28EA8F2934A4C100AB5392 /* ImagePicker.swift */,
 				DD354E0A29335F99000F447E /* Assets.xcassets */,
 				DD354E0C29335F99000F447E /* Preview Content */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD28EA902934A4C100AB5392 /* ImagePicker.swift in Sources */,
 				DD354E0929335F97000F447E /* ContentView.swift in Sources */,
 				DD354E0729335F97000F447E /* InstafilterApp.swift in Sources */,
+				DD28EA922934E8FA00AB5392 /* ImageSaver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,12 +279,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Instafilter/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "we want to save the filtered photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,12 +309,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Instafilter/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "we want to save the filtered photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
